@@ -1,0 +1,3 @@
+Some solutions to Topcoder
+
+Some are incorrect, some are not finished, work in progres...

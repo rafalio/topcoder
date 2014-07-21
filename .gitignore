@@ -1,0 +1,7 @@
+.metadata
+*.html
+*.class
+.settings/
+bin/
+.project
+.classpath
