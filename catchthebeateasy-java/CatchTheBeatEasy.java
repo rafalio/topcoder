@@ -13,9 +13,11 @@ public class CatchTheBeatEasy {
 	    int curpos = 0;
 	    int t = 0;
 	    for(int i = 0; i < x.length; i++){
-	        if(Math.abs(curpos-x[idxs[i]]) > y[idxs[i]]-t) return "Not able to catch";
-	        t += Math.abs(curpos-x[idxs[i]]);
-	        curpos = x[idxs[i]];
+	        int xval = x[idxs[i]];
+	        int yval = y[idxs[i]];
+	        if(Math.abs(curpos-xval) > yval-t) return "Not able to catch";
+	        t = yval;
+	        curpos = xval;
 	    }
 	    return "Able to catch";
 	}
